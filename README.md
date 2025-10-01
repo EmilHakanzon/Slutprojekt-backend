@@ -35,7 +35,7 @@ npm install
 ```env
 NODE_ENV=development
 PORT=
-MONGO_URI
+MONGO_URI=
 ```
 
 ### 4. Starta MongoDB

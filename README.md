@@ -74,7 +74,7 @@ Servern körs på: `http://localhost:4200`
 
 ### Sök lag
 ```bash
- "http://localhost:4200/api/v1/teams/search?q=AIK"
+ http://localhost:4200/api/v1/teams/search?q=AIK
 ```
 
 ### Få antal lag

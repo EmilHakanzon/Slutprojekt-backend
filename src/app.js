@@ -1,18 +1,27 @@
-import "dotenv/config";
 import express from "express";
-import { connect } from "mongoose";
+import cors from "cors";
+import connectDB from "./config/database.js";
+import routes from "./routes/index.js";
 
-// skapar en anslutning till mongoDB
 const app = express();
-const PORT = Number(process.env.PORT || 3000);
-const MONGO_URL = process.env.MONGO_URL || "";
 
-try {
-  await connect(MONGO_URL);
-  app.listen(PORT, () => {
-    console.log(`API listening on: http://localhost:${PORT}`);
+// Middleware
+app.use(cors());
+app.use(express.json());
+
+// Routes
+app.use("/api/v1", routes);
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({
+    message: "Något gick fel!",
+    error:
+      process.env.NODE_ENV === "development"
+        ? err.message
+        : "Internal server error",
   });
-} catch (e) {
-  console.error("MongoDB connection error:", e);
-  process.exit(1);
-}
+});
+
+export default app;

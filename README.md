@@ -64,22 +64,22 @@ Servern körs på: `http://localhost:4200`
 
 ### Hämta alla lag
 ```bash
-curl http://localhost:4200/api/v1/teams
+ http://localhost:4200/api/v1/teams
 ```
 
 ### Hämta lag från Stockholm
 ```bash
-curl http://localhost:4200/api/v1/teams/city/Stockholm
+ http://localhost:4200/api/v1/teams/city/Stockholm
 ```
 
 ### Sök lag
 ```bash
-curl "http://localhost:4200/api/v1/teams/search?q=AIK"
+ "http://localhost:4200/api/v1/teams/search?q=AIK"
 ```
 
 ### Få antal lag
 ```bash
-curl http://localhost:4200/api/v1/teams/count
+ http://localhost:4200/api/v1/teams/count
 ```
 
 

@@ -34,8 +34,8 @@ npm install
 ### 3. Skapa .env fil
 ```env
 NODE_ENV=development
-PORT=4200
-MONGO_URI=mongodb://localhost:27017/slutprojekt
+PORT=
+MONGO_URI
 ```
 
 ### 4. Starta MongoDB

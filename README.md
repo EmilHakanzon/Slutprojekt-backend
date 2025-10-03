@@ -22,9 +22,9 @@ Ett REST API byggt med Express.js och MongoDB för att hantera svenska fotbollsl
 
 ### 1. Klona projektet
 ```bash
-git clone <repository-url>
-cd Slutprojekt-backend
+git clone (https://github.com/EmilHakanzon/Slutprojekt-backend.git)
 ```
+cd Slutprojekt-backend
 
 ### 2. Installera dependencies
 ```bash

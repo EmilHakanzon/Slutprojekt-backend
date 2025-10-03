@@ -34,7 +34,7 @@ npm install
 ### 3. Skapa .env fil
 ```env
 NODE_ENV=development
-PORT=
+PORT=4200
 MONGO_URI=
 ```
 
